@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name='viewport', content='width=device-width, initial-scale=1' />
+    <title> Flock | {{title}}</title>
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link rel= "stylesheet" type= "text/css" href="{{url_for('static', filename='css/style.css')}}" />
+  </head>
+  <body>
+    <header class="green darken-2">
+      <nav>
+        <div class="nav-wrapper green">
+          <a href="/" class="brand-logo valign" style="margin-left:2rem;">
+            <img src="{{url_for('static', filename='imgs/flock_logo_square.png')}}"/>
+            Flock
+          </a>
+          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="/">Home</a></li>
+            <li><a href="/chat">Chat</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/signup">Sign Up</a></li>
+          </ul>
+          <ul class="side-nav" id="mobile-demo">
+            <li><a href="/">Home</a></li>
+            <li><a href="/chat">Chat</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/signup">Sign Up</a></li>
+          </ul>
+        </div>
+      </nav>
+      <h2 class="white-text center-align">{{title}}</h2>
+    </header>
+
+    <main role="main">
+      {% block body %}
+      {% endblock %}
+    </main>
+
+    <footer class="page-footer grey darken-2">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Flock Services</h5>
+            <h6 class="grey-text lighten-3 location-display"></h6>
+            <!-- <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p> -->
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">Links</h5>
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="/">Home</a></li>
+              <li><a class="grey-text text-lighten-3" href="/chat">Chat</a></li>
+              <li><a class="grey-text text-lighten-3" href="/blog">Blog</a></li>
+              <li><a class="grey-text text-lighten-3" href="/about">About</a></li>
+              <li><a class="grey-text text-lighten-3" href="/about">Sign Up</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+        © 2016 Flock
+        <!-- <a class="grey-text text-lighten-4 right" href="#!">More Links</a> -->
+        </div>
+      </div>
+    </footer>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+    <script src="{{url_for('static', filename='js/startup.js')}}"></script>
+    <script src="{{url_for('static', filename='js/autocomplete.js')}}"></script>
+    <script src="{{url_for('static', filename='js/ask.js')}}"></script>
+    <script src="{{url_for('static', filename='js/signup.js')}}"></script>
+  </body>
+</html>

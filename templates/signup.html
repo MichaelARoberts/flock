@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+{% block body %}
+  <div class="container">
+    <div class="row">
+      <div class="col s12">
+        <form>
+          <div class="card large">
+            <div class="card-content">
+              <div class="input-field col s12 m6">
+                <input placeholder="John" id="first_name" type="text" class="validate">
+                <label class="green-text" for="first_name">First Name</label>
+              </div>
+              <div class="input-field col s12 m6">
+                <input placeholder="Doe" id="last_name" type="text" class="validate">
+                <label class="green-text" for="first_name">Last Name</label>
+              </div>
+              <div class="input-field col s12">
+                <i class="material-icons prefix">account_circle</i>
+                <input placeholder="Username" id="username" type="text" class="validate">
+                <label class="green-text" for="username">Username</label>
+              </div>
+              <div class="input-field col s12">
+                <i class="material-icons prefix">vpn_key</i>
+                <input placeholder="Password" id="password" type="password" class="validate">
+                <label class="green-text" for="password">Password</label>
+              </div>
+              <a onclick="signUp()" class="col s12 valign waves-effect green waves-light btn">Join</a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+{% endblock %}

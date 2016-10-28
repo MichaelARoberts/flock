@@ -1,0 +1,76 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background-color:#e0e0e0 ;
+}
+
+h1,h2,h3,h4,h5,h6,.brand-logo {
+  font-family: 'Poppins', sans-serif !important;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+header {
+  margin-bottom:2rem;
+}
+
+.splash-screen {
+  width: 100vw;
+  height: 100vh;
+  margin:0;
+  padding: 0;
+}
+.row .col .splash-screen-wrapper{
+  width: 100vw;
+  height: 100vh;
+  margin:0;
+  padding: 0 !important;
+}
+
+.question {
+  margin-bottom:.2rem;
+}
+
+.answer {
+  margin-bottom:2rem;
+}
+
+.brand-logo img{
+  height: 2rem;
+  padding-top: .2rem;
+}
+
+.card.horizontal {
+  margin-bottom: 0rem !important;
+}
+
+.timestamp {
+  margin-left: .5rem;
+}
+
+.card-action {
+  padding-top: .1rem !important;
+  padding-bottom: .1rem !important;
+}
+
+a {
+  color: #009688;
+}
+
+#query {
+  font-size: 20px;
+}
+
+.answer a {
+  color: white;
+  text-decoration: underline;
+}
+
+.autocomplete-content{
+  z-index: 100 !important;
+  position: absolute !important;
+  margin-top: -4rem;
+}

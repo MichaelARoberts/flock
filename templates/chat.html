@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+{% block body %}
+  <div class="container">
+    <div id="chatContainer">
+    </div>
+    <div class="row">
+      <form class="col s12  card">
+        <div class="card-content">
+          <div class=" row">
+            <div class="input-field col s12">
+                <i class="material-icons green-text prefix">textsms</i>
+                <input type="text" id="query" name="query" class="autocomplete" autocomplete="off"></input>
+                <label class="green-text" for="query">Ask your Question</label>
+                <a onclick="askQuestion()" class="waves-effect waves-light green btn"><i class="material-icons left">play_arrow</i>Ask</a>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+{% endblock %}
